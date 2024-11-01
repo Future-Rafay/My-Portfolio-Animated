@@ -4,6 +4,14 @@ import Head from "next/head";
 import Image from "next/image";
 import React from "react";
 import profilepictwo from "../../public/images/profile/Ai-Rafay.jpg";
+import Skills from "@/components/Skills";
+import Experience from "@/components/Experience";
+import Education from "@/components/Education";
+
+
+
+const AnimatedNumbers = ()=>{}
+
 
 const about = () => {
     return (
@@ -67,6 +75,9 @@ const about = () => {
                         </div>
                     </div>  
                 </Layout>
+                <Skills />
+                <Experience />
+                <Education />
             </main>
         </>
     );
