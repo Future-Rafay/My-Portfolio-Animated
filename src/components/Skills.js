@@ -4,11 +4,11 @@ import { motion } from "framer-motion";
 const Skill = ({ name, x, y }) => {
     return (
         <motion.div
-            className='flex items-center justify-center rounded-full font-semibold bg-dark text-light text-lg py-3 px-6 shadow-dark cursor-pointer absolute'
-            whileHover={{ backgroundColor: "#f5f5f5",color :"#1b1b1b", border:"2px solid #1b1b1b", scale: 1.1}}
+            className='flex items-center justify-center rounded-full font-semibold bg-dark text-light text-lg py-3 px-6 shadow-dark cursor-pointer absolute border-2 border-dark border-solid hover:bg-light hover:text-dark dark:bg-light dark:text-dark hover:dark:bg-dark hover:dark:text-light hover:dark:border-light'
+            whileHover={{scale: 1.1}}
             initial={{x:0,y:0}}
-            whileInView={{x:x ,y:y}}
-            transition={{duration : 3}}
+            whileInView={{x:x ,y:y , transition:{duration : 3}}}
+          
             viewport={{once : true}}
         >
             {name}
@@ -22,10 +22,10 @@ const Skills = () => {
             <h2 className="font-bold text-8xl w-full mt-64 text-center relative">
                 Skills
             </h2>
-            <div className="w-full h-screen relative flex items-center justify-center rounded-full bg-circularLight ">
+            <div className="w-full h-screen relative flex items-center justify-center rounded-full bg-circularLight dark:bg-circularDark">
                 <motion.div
-                    className="flex items-center justify-center bg-dark text-light text-xl rounded-full font-semibold p-8 shadow-dark cursor-pointer"
-                    whileHover={{ backgroundColor: "#f5f5f5",color :"#1b1b1b", border:"2px solid #1b1b1b", scale: 1.1}}
+                    className="flex items-center justify-center bg-dark text-light text-xl rounded-full font-semibold p-8 shadow-dark cursor-pointer border-2 border-dark border-solid hover:bg-light hover:text-dark hover:border-dark dark:bg-light dark:text-dark hover:dark:bg-dark hover:dark:text-light hover:dark:border-light"
+                    whileHover={{ scale: 1.1}}
                 >
                     Web
                 </motion.div>

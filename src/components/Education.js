@@ -19,7 +19,7 @@ const Details = ({ type, time, place, info }) => {
                     {type}
 
                 </h3>
-                <span className="capatalize font-medium text-dark/75 ">
+                <span className="capatalize font-medium text-dark/75 dark:text-light/75 ">
                     {time} | {place}
                 </span>
                 <p className="font-medium w-full">{info}</p>
@@ -42,7 +42,7 @@ const Education = () => {
             <div ref={ref} className="w-[75%] mx-auto relative">
                 <motion.div
                     style={{ scaleY: scrollYProgress }}
-                    className="absolute left-9 top-0 w-1 h-full bg-dark origin-top"
+                    className="absolute left-9 top-0 w-1 h-full bg-dark origin-top dark:bg-light"
                 />
                 <ul className="w-full flex flex-col items-start justify-between ml-4">
                     <Details
