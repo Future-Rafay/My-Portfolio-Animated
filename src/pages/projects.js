@@ -13,12 +13,12 @@ const FramerImage = motion(Image);
 
 const FeaturedProject = ({ title, link, type, summary, image, gitHubLink }) => {
     return (
-        <article className="relative w-full flex items-center justify-between rounded-3xl rounded-br-2xl border border-solid border-dark bg-light dark:bg-dark dark:border-light p-12">
+        <article className="relative w-full flex items-center justify-between rounded-3xl rounded-br-2xl border border-solid border-dark bg-light dark:bg-dark dark:border-light p-12 lg:flex-col lg:p-8 xs:rounded-2xl xs:rounded-br-3xl xs:p-4">
             <div className="absolute top-0 -right-4 -z-10 w-[101%] h-[104%] rounded-[2.65rem] rounded-br-3xl bg-dark dark:bg-light" />
             <Link
                 href={link}
                 target="_blank"
-                className="w-1/2 cursor-pointer overflow-hidden rounded-lg"
+                className="w-1/2 cursor-pointer overflow-hidden rounded-lg lg:w-full"
             >
                 <FramerImage
                 priority
@@ -30,8 +30,8 @@ const FeaturedProject = ({ title, link, type, summary, image, gitHubLink }) => {
                     transition={{ duration: 0.4 }}
                 />
             </Link>
-            <div className="w-1/2 flex flex-col items-start justify-between pl-6">
-                <span className="text-primary font-medium text-xl dark:text-primaryDark">
+            <div className="w-1/2 flex flex-col items-start justify-between pl-6 lg:w-full lg:pl-0 lg:pt-6">
+                <span className="text-primary font-medium text-xl dark:text-primaryDark xs:text-base">
                     {type}
                 </span>
                 <Link
@@ -39,11 +39,11 @@ const FeaturedProject = ({ title, link, type, summary, image, gitHubLink }) => {
                     target="_blank"
                     className="hover:underline underline-offset-3"
                 >
-                    <h2 className="my-2 w-full text-left text-4xl font-bold dark:text-light ">
+                    <h2 className="my-2 w-full text-left text-4xl font-bold dark:text-light sm:text-base ">
                         {title}
                     </h2>
                 </Link>
-                <p className="my-2 font-medium text-dark dark:text-light">{summary}</p>
+                <p className="my-2 font-medium text-dark dark:text-light sm:text-xs">{summary}</p>
                 <div className="mt-2 flex items-center">
                     <Link href={gitHubLink} target="_blank" className="w-10">
                         <GithubIcon />
@@ -51,7 +51,7 @@ const FeaturedProject = ({ title, link, type, summary, image, gitHubLink }) => {
                     <Link
                         href={link}
                         target="_blank"
-                        className="bg-dark text-light dark:bg-light dark:text-dark p-2 px-6 rounded-lg font-semibold text-lg ml-4"
+                        className="bg-dark text-light dark:bg-light dark:text-dark p-2 px-6 rounded-lg font-semibold text-lg ml-4 sm:px-3 sm:text-sm"
                     >
                         Visit Project
                     </Link>
@@ -125,9 +125,9 @@ const projects = () => {
                 <Layout className="pt-16">
                     <AnimatedText
                         text="Imagination Trumps Knowledge!"
-                        className="mb-24"
+                        className="mb-24 lg:!text-7xl sm:!text-6xl xs:!text-4xl"
                     />
-                    <div className="grid grid-cols-12 gap-24 gap-y-36">
+                    <div className="grid grid-cols-12 gap-24 gap-y-36 xl:gap-x-16 lg:gap-x-8 md:gap-y-24 sm:gap-x-0">
                         <div className="col-span-12">
                             <FeaturedProject
                                 type="Featured Project"
