@@ -48,7 +48,7 @@ export default function Home() {
                   Resume <LinkArrow className="ml-4 w-6" />
                 </Link>
                 <Link
-                  href="mailto:rafaynadeem77@gmail.com"
+                  href="/contact"
                   target="_blank"
                   className="text-dark dark:text-light text-lg ml-4 underline font-semibold capitalize md:text-base"
                 >
@@ -70,7 +70,7 @@ export default function Home() {
           </div>
         </Layout>
         <HireMe />
-        <div className="absolute inline-block w-28 left-8 bottom-8 md:hidden">
+        <div className="absolute inline-block w-28 left-8 bottom-8 md:hidden lg:!absolute xl:w-16">
           <Image
             src={lightbulb}
             alt="Light Bulb Image"

@@ -100,7 +100,7 @@ const Navbar = () => {
                         <TwitterIcon />
                     </motion.a>
                     <motion.a
-                        href="https://www.github.com"
+                        href="https://github.com/Future-Rafay"
                         target={"_blank"}
                         className="w-7 mx-3"
                         whileHover={{ y: -2 }}
@@ -109,7 +109,7 @@ const Navbar = () => {
                         <GithubIcon />
                     </motion.a>
                     <motion.a
-                        href="https://www.linkedin.com"
+                        href="https://www.linkedin.com/in/rafay-nadeem-14a2632bb/"
                         target={"_blank"}
                         className="w-7 mx-3"
                         whileHover={{ y: -2 }}
@@ -174,7 +174,7 @@ const Navbar = () => {
                             <TwitterIcon />
                         </motion.a>
                         <motion.a
-                            href="https://www.github.com"
+                            href="https://github.com/Future-Rafay"
                             target={"_blank"}
                             className="w-7 mx-3 bg-light text-dark dark:text-light dark:bg-dark rounded-full sm:mx-2"
                             whileHover={{ y: -2 }}
@@ -183,7 +183,7 @@ const Navbar = () => {
                             <GithubIcon />
                         </motion.a>
                         <motion.a
-                            href="https://www.linkedin.com"
+                            href="https://www.linkedin.com/in/rafay-nadeem-14a2632bb/"
                             target={"_blank"}
                             className="w-7 mx-3 sm:mx-2"
                             whileHover={{ y: -2 }}
