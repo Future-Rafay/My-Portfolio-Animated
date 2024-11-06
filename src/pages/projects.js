@@ -117,9 +117,6 @@ const Project = ({ title, type, image, link, gitHubLink }) => {
 };
 
 const projects = () => {
-    const containerRef = useRef();
-    const { scrollYProgress } = useScroll({ container: containerRef });
-
     return (
         <>
             <Head>
