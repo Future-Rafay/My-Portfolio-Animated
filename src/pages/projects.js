@@ -6,8 +6,14 @@ import { motion, useScroll } from "framer-motion";
 import Head from "next/head";
 import Link from "next/link";
 import React, { useRef } from "react";
-import FeaturedProject1Image from "../../public/images/projects/fashion-studio-website.jpg";
 import Image from "next/image";
+import FeaturedProject1Image from "../../public/images/projects/e-commerce-web1.png";
+import Project1Image from "../../public/images/projects/todo-app.png";
+import Project2Image from "../../public/images/projects/weather-app.png";
+import FeaturedProject2Image from "../../public/images/projects/bubble-game-2.png";
+import Project3Image from "../../public/images/projects/weather-app.png";
+import Project4Image from "../../public/images/projects/weather-app.png";
+import FeaturedProject3Image from "../../public/images/projects/Employee-managment-sys.png";
 
 const FramerImage = motion(Image);
 
@@ -21,8 +27,8 @@ const FeaturedProject = ({ title, link, type, summary, image, gitHubLink }) => {
                 className="w-1/2 cursor-pointer overflow-hidden rounded-lg lg:w-full"
             >
                 <FramerImage
-                priority
-                  sizes="(max-width: 768px) 100vw , (max-width: 1200px) 50vw , 50vw"
+                    priority
+                    sizes="(max-width: 768px) 100vw , (max-width: 1200px) 50vw , 50vw"
                     src={image}
                     alt={title}
                     className="w-full h-auto"
@@ -43,11 +49,13 @@ const FeaturedProject = ({ title, link, type, summary, image, gitHubLink }) => {
                         {title}
                     </h2>
                 </Link>
-                <p className="my-2 font-medium text-dark dark:text-light sm:text-xs">{summary}</p>
+                <p className="my-2 font-medium text-dark dark:text-light sm:text-xs">
+                    {summary}
+                </p>
                 <div className="mt-2 flex items-center">
-                    <Link href={gitHubLink} target="_blank" className="w-10">
+                    {/* <Link href={gitHubLink} target="_blank" className="w-10">
                         <GithubIcon />
-                    </Link>
+                    </Link> */}
                     <Link
                         href={link}
                         target="_blank"
@@ -99,9 +107,9 @@ const Project = ({ title, type, image, link, gitHubLink }) => {
                     >
                         Visit
                     </Link>
-                    <Link href={gitHubLink} target="_blank" className="w-10 lg:w-8 ">
+                    {/* <Link href={gitHubLink} target="_blank" className="w-10 lg:w-8 ">
                         <GithubIcon />
-                    </Link>
+                    </Link> */}
                 </div>
             </div>
         </article>
@@ -131,9 +139,9 @@ const projects = () => {
                         <div className="col-span-12">
                             <FeaturedProject
                                 type="Featured Project"
-                                title="Crypto Screener Application"
-                                summary="A feature-rich Crypto Screener App using React, Tailwind CSS, Context API, React Router and Recharts. It shows detail regarding almost all the cryptocurrency. You can easily convert the price in your local currency."
-                                link="/"
+                                title="E Commerce Web"
+                                summary="Prime Emporium is a premium e-commerce platform offering a sleek, dark-themed design for an elegant shopping experience. The homepage features a powerful tagline, Elevate Your Lifestyle with Prime Emporium, and invites users to explore high-quality products. The Prime Mens Wear section showcases sophisticated fashion with minimalistic product cards and high-quality images. The refined color palette of charcoal gray, champagne, and burgundy adds sophistication. The website includes essential features like a search bar, cart icon, and organized categories, ensuring easy navigation. Prime Emporium is not just a store but a destination for those seeking to elevate their wardrobe and lifestyle."
+                                link="https://e-commerce-web-abdul-rafays-projects-87eac4f7.vercel.app/"
                                 gitHubLink="/"
                                 image={FeaturedProject1Image}
                             />
@@ -141,29 +149,39 @@ const projects = () => {
                         <div className="col-span-6 sm:col-span-12">
                             <Project
                                 type="Project"
-                                title="Crypto Screener Application"
-                                link="/"
+                                title="Todo List App"
+                                link="https://todo-app-abdul-rafays-projects-87eac4f7.vercel.app/"
                                 gitHubLink="/"
-                                image={FeaturedProject1Image}
+                                image={Project1Image}
                             />
                         </div>
                         <div className="col-span-6 sm:col-span-12">
                             <Project
                                 type="Project"
-                                title="Crypto Screener Application"
-                                link="/"
+                                title="Wheather App"
+                                link="https://weather-app-abdul-rafays-projects-87eac4f7.vercel.app/"
                                 gitHubLink="/"
-                                image={FeaturedProject1Image}
+                                image={Project2Image}
                             />
                         </div>
                         <div className="col-span-12">
                             <FeaturedProject
                                 type="Featured Project"
-                                title="Crypto Screener Application"
-                                summary="A feature-rich Crypto Screener App using React, Tailwind CSS, Context API, React Router and Recharts. It shows detail regarding almost all the cryptocurrency. You can easily convert the price in your local currency."
-                                link="/"
+                                title="Bubble Game"
+                                summary="Bubble Game is an interactive web-based game where players click on bubbles that match a target number. The game includes a start menu and a timer to track time and score. Players enjoy engaging sound effects for events like a timer end or successful bubble click. With a responsive design, it adapts seamlessly to various devices. The game features a visually appealing color theme with light blue and aqua bubbles, dark navy UI, and bright yellow highlights for the score and timer, offering a fun and dynamic user experience."
+                                link="https://bubble-game-abdul-rafays-projects-87eac4f7.vercel.app/"
                                 gitHubLink="/"
-                                image={FeaturedProject1Image}
+                                image={FeaturedProject2Image}
+                            />
+                        </div>
+                        <div className="col-span-12">
+                            <FeaturedProject
+                                type="Featured Project"
+                                title="Employee Management System"
+                                summary="This Employee Management System is a web application designed to streamline the management of employee tasks and data. Developed using JavaScript, TypeScript, and Tailwind CSS, the system provides functionalities like task assignment, tracking task statuses, and role-based access control for both admins and employees. Key features include:Role-based System: Admins can manage employee data, tasks, and assign roles, while employees can track and update their own tasks.Task Management: The system enables easy task creation, updating, and status tracking (New, Active, Completed, Failed). Tasks can be assigned to specific employees, with progress monitored in real time.Dynamic Task Updates: Task statuses change based on user interaction (e.g., 'Accept' for starting a task, 'Mark as Completed' or 'Mark as Failed').Employee Data: The system manages essential employee information such as personal details, task count, and task-related data.This project showcases my ability to manage complex systems with attention to detail, utilizing modern web development technologies to create an intuitive and efficient solution for employee task management."
+                                link="https://bubble-game-abdul-rafays-projects-87eac4f7.vercel.app/"
+                                gitHubLink="/"
+                                image={FeaturedProject3Image}
                             />
                         </div>
                         <div className="col-span-6 sm:col-span-12">
@@ -172,7 +190,7 @@ const projects = () => {
                                 title="Crypto Screener Application"
                                 link="/"
                                 gitHubLink="/"
-                                image={FeaturedProject1Image}
+                                image={Project3Image}
                             />
                         </div>
                         <div className="col-span-6 sm:col-span-12">
@@ -181,7 +199,7 @@ const projects = () => {
                                 title="Crypto Screener Application"
                                 link="/"
                                 gitHubLink="/"
-                                image={FeaturedProject1Image}
+                                image={Project3Image}
                             />
                         </div>
                     </div>
