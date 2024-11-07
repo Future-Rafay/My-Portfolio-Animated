@@ -155,7 +155,7 @@ const projects = () => {
                         <div className="col-span-6 sm:col-span-12">
                             <Project
                                 type="Project"
-                                title="Wheather App"
+                                title="Weather App"
                                 link="https://weather-app-abdul-rafays-projects-87eac4f7.vercel.app/"
                                 gitHubLink="/"
                                 image={Project2Image}
@@ -171,7 +171,7 @@ const projects = () => {
                                 image={FeaturedProject2Image}
                             />
                         </div>
-                        <div className="col-span-12">
+                        {/* <div className="col-span-12">
                             <FeaturedProject
                                 type="Featured Project"
                                 title="Employee Management System"
@@ -180,25 +180,8 @@ const projects = () => {
                                 gitHubLink="/"
                                 image={FeaturedProject3Image}
                             />
-                        </div>
-                        <div className="col-span-6 sm:col-span-12">
-                            <Project
-                                type="Project"
-                                title="Crypto Screener Application"
-                                link="/"
-                                gitHubLink="/"
-                                image={Project3Image}
-                            />
-                        </div>
-                        <div className="col-span-6 sm:col-span-12">
-                            <Project
-                                type="Project"
-                                title="Crypto Screener Application"
-                                link="/"
-                                gitHubLink="/"
-                                image={Project3Image}
-                            />
-                        </div>
+                        </div> */}
+                       
                     </div>
                 </Layout>
             </main>
