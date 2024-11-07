@@ -56,7 +56,7 @@ const Education = () => {
                     <Details
                         type="Intermediate in engineering."
                         time="2023-Present"
-                        place="Govt National Collage , Karachi"
+                        place="Govt. National Collage , Karachi"
                         info="Currently pursuing Pre-Engineering at Government National College Karachi, focusing on foundational courses in mathematics, physics, and chemistry. This program is shaping my analytical and problem-solving skills and preparing me for a future in engineering"
                     />
 

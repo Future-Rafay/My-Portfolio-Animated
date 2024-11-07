@@ -1,11 +1,9 @@
 import AnimatedText from "@/components/AnimatedText";
-import Brain from "@/components/Brain";
 import { GithubIcon } from "@/components/Icons";
 import Layout from "@/components/Layout";
-import { motion, useScroll } from "framer-motion";
+import { motion } from "framer-motion";
 import Head from "next/head";
 import Link from "next/link";
-import React, { useRef } from "react";
 import Image from "next/image";
 import FeaturedProject1Image from "../../public/images/projects/e-commerce-web1.png";
 import Project1Image from "../../public/images/projects/todo-app.png";
@@ -20,7 +18,7 @@ const FramerImage = motion(Image);
 const FeaturedProject = ({ title, link, type, summary, image, gitHubLink }) => {
     return (
         <article className="relative w-full flex items-center justify-between rounded-3xl rounded-br-2xl border border-solid border-dark bg-light dark:bg-dark dark:border-light p-12 lg:flex-col lg:p-8 xs:rounded-2xl xs:rounded-br-3xl xs:p-4 ">
-            <div className="absolute top-0 -right-4 -z-10 w-[101%] h-[104%] rounded-[2.65rem] rounded-br-3xl bg-dark dark:bg-light xs:-right-2 md:h-[102%] xs:w-full xs:rounded-[1.5rem] " />
+            <div className="absolute top-0 -right-4 -z-10 w-[101%] h-[104%] rounded-[2.65rem] rounded-br-3xl bg-dark dark:bg-light xs:-right-2 md:h-[102%] xs:w-full xs:rounded-[1.5rem]" />
             <Link
                 href={link}
                 target="_blank"

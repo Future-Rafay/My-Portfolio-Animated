@@ -5,14 +5,8 @@ import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
 import { motion, useMotionValue } from "framer-motion";
-import FeaturedArticle1 from "../../public/images/articles/create modal component in react using react portals.png";
-import FeaturedArticle2 from "../../public/images/articles/create loading screen in react js.jpg";
-import Article1 from "../../public/images/articles/form validation in reactjs using custom react hook.png";
-import Article3 from "../../public/images/articles/pagination component in reactjs.jpg";
-import Article2 from "../../public/images/articles/smooth scrolling in reactjs.png";
-import Article4 from "../../public/images/articles/todo list app built using react redux and framer motion.png";
-import Article6 from "../../public/images/articles/What is higher order component in React.jpg";
-import Article5 from "../../public/images/articles/What is Redux with easy explanation.png";
+import FeaturedArticle1 from "../../public/images/articles/under-construction.jpg";
+
 
 const FramerImage = motion(Image);
 
@@ -125,7 +119,7 @@ const articles = () => {
                             summary="Learn how to create stunning loading screens in React with 3 different methods. Discover how to use React-Loading, React-Lottie & build a custom loading screen. Improve the user experience."
                             time="10 min"
                             link="/"
-                            img={FeaturedArticle2}
+                            img={FeaturedArticle1}
                         />
                     </ul>
                     <h2 className="font-bold text-5xl w-full text-center mt-32 my-16">
@@ -136,37 +130,19 @@ const articles = () => {
                             title="Form Validation In Reactjs: Build A Reusable Custom Hook For Inputs And Error Handling"
                             time="8 min"
                             link="/"
-                            img={Article1}
+                            img={FeaturedArticle1}
                         />
                         <Articles
                             title="Silky Smooth Scrolling In Reactjs: A Step-By-Step Guide For React Developers"
                             time="10 min"
                             link="/"
-                            img={Article2}
+                            img={FeaturedArticle1}
                         />
                         <Articles
                             title="Creating An Efficient Modal Component In React Using Hooks And Portals"
                             time="9 min"
                             link="/"
-                            img={Article3}
-                        />
-                        <Articles
-                            title="Build A Fabulous Todo List App With React, Redux And Framer-Motion"
-                            time="10 min"
-                            link="/"
-                            img={Article4}
-                        />
-                        <Articles
-                            title="Redux Simplified: A Beginner's Guide For Web Developers"
-                            time="9 min"
-                            link="/"
-                            img={Article5}
-                        />
-                        <Articles
-                            title="What Is Higher Order Component (Hoc) In React?"
-                            time="5 min"
-                            link="/"
-                            img={Article6}
+                            img={FeaturedArticle1}
                         />
                     </ul>
                 </Layout>
