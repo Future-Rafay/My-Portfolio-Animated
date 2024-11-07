@@ -9,7 +9,7 @@ import FeaturedProject1Image from "../../public/images/projects/e-commerce-web1.
 import Project1Image from "../../public/images/projects/todo-app.png";
 import Project2Image from "../../public/images/projects/weather-app.png";
 import FeaturedProject2Image from "../../public/images/projects/bubble-game-2.png";
-import Project3Image from "../../public/images/projects/weather-app.png";
+import Project3Image from "../../public/images/projects/amazon.png";
 import Project4Image from "../../public/images/projects/weather-app.png";
 import FeaturedProject3Image from "../../public/images/projects/Employee-managment-sys.png";
 
@@ -167,6 +167,15 @@ const projects = () => {
                                 link="https://bubble-game-abdul-rafays-projects-87eac4f7.vercel.app/"
                                 gitHubLink="/"
                                 image={FeaturedProject2Image}
+                            />
+                        </div>
+                        <div className="col-span-6 sm:col-span-12">
+                            <Project
+                                type="Project"
+                                title="Amazon Home page clone"
+                                link="https://amazon-clone-abdul-rafays-projects-87eac4f7.vercel.app/"
+                                gitHubLink="/"
+                                image={Project3Image}
                             />
                         </div>
                         {/* <div className="col-span-12">
