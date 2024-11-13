@@ -10,8 +10,10 @@ import Project1Image from "../../public/images/projects/todo-app.png";
 import Project2Image from "../../public/images/projects/weather-app.png";
 import FeaturedProject2Image from "../../public/images/projects/bubble-game-2.png";
 import Project3Image from "../../public/images/projects/amazon.png";
-import Project4Image from "../../public/images/projects/weather-app.png";
-import FeaturedProject3Image from "../../public/images/projects/Employee-managment-sys.png";
+import Project4Image from "../../public/images/projects/toyota-web.png";
+import FeaturedProject3Image from "../../public/images/projects/resumebuilder.miltestone4.png";
+import FeaturedProject4Image from "../../public/images/projects/portfolio-customCSS.png";
+
 
 const FramerImage = motion(Image);
 
@@ -131,14 +133,24 @@ const projects = () => {
                         className="mb-16 lg:!text-7xl sm:!text-6xl xs:!text-4xl sm:mb-8"
                     />
                     <div className="grid grid-cols-12 gap-24 gap-y-36 xl:gap-x-16 lg:gap-x-8 md:gap-y-24 sm:gap-x-0">
+                    <div className="col-span-12">
+                            <FeaturedProject
+                                type="Featured Project"
+                                title="CV dara Resume Builder App"
+                                summary="CV Dara is a web-based application that simplifies creating and customizing professional resumes. Built with HTML, JavaScript, and CSS, it features a user-friendly form where users can input personal information, education, experience, and skills. This data is dynamically rendered into a styled resume template for a polished final result. With data persistence, users can easily revisit and update their resumes. CV Dara highlights practical front-end development skills, focusing on responsive design, dynamic data handling, and enhancing user experience, making it an efficient tool for anyone needing a quick, customizable resume solution."
+                                link="https://resume-builder-milestone4-one.vercel.app/"
+                                gitHubLink="/"
+                                image={FeaturedProject3Image}
+                            />
+                        </div>
                         <div className="col-span-12">
                             <FeaturedProject
                                 type="Featured Project"
-                                title="E Commerce Web"
-                                summary="Prime Emporium is a premium e-commerce platform offering a sleek, dark-themed design for an elegant shopping experience. The homepage features a powerful tagline, Elevate Your Lifestyle with Prime Emporium, and invites users to explore high-quality products. The Prime Mens Wear section showcases sophisticated fashion with minimalistic product cards and high-quality images. The refined color palette of charcoal gray, champagne, and burgundy adds sophistication. The website includes essential features like a search bar, cart icon, and organized categories, ensuring easy navigation. Prime Emporium is not just a store but a destination for those seeking to elevate their wardrobe and lifestyle."
-                                link="https://e-commerce-web-abdul-rafays-projects-87eac4f7.vercel.app/"
+                                title="Bubble Game"
+                                summary="Bubble Game is an interactive web-based game where players click on bubbles that match a target number. The game includes a start menu and a timer to track time and score. Players enjoy engaging sound effects for events like a timer end or successful bubble click. With a responsive design, it adapts seamlessly to various devices. The game features a visually appealing color theme with light blue and aqua bubbles, dark navy UI, and bright yellow highlights for the score and timer, offering a fun and dynamic user experience."
+                                link="https://bubble-game-abdul-rafays-projects-87eac4f7.vercel.app/"
                                 gitHubLink="/"
-                                image={FeaturedProject1Image}
+                                image={FeaturedProject2Image}
                             />
                         </div>
                         <div className="col-span-6 sm:col-span-12">
@@ -162,13 +174,14 @@ const projects = () => {
                         <div className="col-span-12">
                             <FeaturedProject
                                 type="Featured Project"
-                                title="Bubble Game"
-                                summary="Bubble Game is an interactive web-based game where players click on bubbles that match a target number. The game includes a start menu and a timer to track time and score. Players enjoy engaging sound effects for events like a timer end or successful bubble click. With a responsive design, it adapts seamlessly to various devices. The game features a visually appealing color theme with light blue and aqua bubbles, dark navy UI, and bright yellow highlights for the score and timer, offering a fun and dynamic user experience."
-                                link="https://bubble-game-abdul-rafays-projects-87eac4f7.vercel.app/"
+                                title="E Commerce Web"
+                                summary="Prime Emporium is a premium e-commerce platform offering a sleek, dark-themed design for an elegant shopping experience. The homepage features a powerful tagline, Elevate Your Lifestyle with Prime Emporium, and invites users to explore high-quality products. The Prime Mens Wear section showcases sophisticated fashion with minimalistic product cards and high-quality images. The refined color palette of charcoal gray, champagne, and burgundy adds sophistication. The website includes essential features like a search bar, cart icon, and organized categories, ensuring easy navigation. Prime Emporium is not just a store but a destination for those seeking to elevate their wardrobe and lifestyle."
+                                link="https://e-commerce-web-abdul-rafays-projects-87eac4f7.vercel.app/"
                                 gitHubLink="/"
-                                image={FeaturedProject2Image}
+                                image={FeaturedProject1Image}
                             />
                         </div>
+                        
                         <div className="col-span-6 sm:col-span-12">
                             <Project
                                 type="Project"
@@ -178,6 +191,26 @@ const projects = () => {
                                 image={Project3Image}
                             />
                         </div>
+                        <div className="col-span-6 sm:col-span-12">
+                            <Project
+                                type="Project"
+                                title="Toyota Showroom Web"
+                                link="https://toyota-showroom-web-custom-css.vercel.app/"
+                                gitHubLink="/"
+                                image={Project4Image}
+                            />
+                        </div>
+                        <div className="col-span-12">
+                            <FeaturedProject
+                                type="Porfolio"
+                                title="My another Portfolio"
+                                summary="This portfolio is clone of my origonal porfolio but with custom css and made in only 2 hours on next js"
+                                link="https://my-portfolio-custom-css-abdul-rafays-projects-87eac4f7.vercel.app/"
+                                gitHubLink="/"
+                                image={FeaturedProject4Image}
+                            />
+                        </div>
+    
                         {/* <div className="col-span-12">
                             <FeaturedProject
                                 type="Featured Project"
