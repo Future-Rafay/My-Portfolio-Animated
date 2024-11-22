@@ -91,6 +91,7 @@ const ContactPage = () => {
             </span>
           )}
           {error && (
+            console.error("EmailJS Error:", error),
             <span className="text-red-600 dark:text-red-400 font-semibold">
               Something went wrong!
             </span>
