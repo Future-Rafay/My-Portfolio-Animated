@@ -47,7 +47,6 @@ export default function Home() {
                 </Link>
                 <Link
                   href="/contact"
-                  target="_blank"
                   className="text-dark dark:text-light text-lg ml-4 underline font-semibold capitalize md:text-base"
                 >
                   Contact
