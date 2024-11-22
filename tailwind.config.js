@@ -23,18 +23,18 @@ module.exports = {
       //   primary: "#FF6B6B",  // (a bold, warm red-pink hue)
       //   primaryDark: "#4ECDC4", //  (a soft, cool aqua tone for contrast)
       // },
-      colors: {
-        dark: "#212529", // (a deep charcoal gray, for a refined dark tone without being pure black)
-        light: "#E9ECEF", //(a warm, soft off-white that’s easy on the eyes)
-        primary: "#FF5C8D", //(a vibrant coral pink, eye-catching but not overpowering)
-        primaryDark: "#4DB6AC", // (a cool, muted teal for a refreshing contrast with the coral)
-      },
       // colors: {
-      //   dark: "#2E4057", //(Dusty Navy, for depth)
-      //   light: "#FFF3E0", // (Soft Cream, a warm off-white)
-      //   primary: "#F48FB1", // (Pastel Pink, soft yet attention-grabbing)
-      //   primaryDark: "#81D4FA", // (Light Sky Blue for a refreshing contrast)
+      //   dark: "#212529", // (a deep charcoal gray, for a refined dark tone without being pure black)
+      //   light: "#E9ECEF", //(a warm, soft off-white that’s easy on the eyes)
+      //   primary: "#FF5C8D", //(a vibrant coral pink, eye-catching but not overpowering)
+      //   primaryDark: "#4DB6AC", // (a cool, muted teal for a refreshing contrast with the coral)
       // },
+      colors: {
+        dark: "#2E4057", //(Dusty Navy, for depth)
+        light: "#FFF3E0", // (Soft Cream, a warm off-white)
+        primary: "#F48FB1", // (Pastel Pink, soft yet attention-grabbing)
+        primaryDark: "#81D4FA", // (Light Sky Blue for a refreshing contrast)
+      },
       // colors:{
       //   dark: "#37474F",// (Deep Slate Blue)
       //   light: "#ECEFF1",// (Light Slate Gray)

@@ -13,6 +13,8 @@ import Project3Image from "../../public/images/projects/amazon.png";
 import Project4Image from "../../public/images/projects/toyota-web.png";
 import FeaturedProject3Image from "../../public/images/projects/resumebuilder.miltestone4.png";
 import FeaturedProject4Image from "../../public/images/projects/portfolio-customCSS.png";
+import FeaturedProject5Image from "../../public/images/projects/snakeGame.png";
+
 
 
 const FramerImage = motion(Image);
@@ -45,11 +47,11 @@ const FeaturedProject = ({ title, link, type, summary, image, gitHubLink }) => {
                     target="_blank"
                     className="hover:underline underline-offset-3"
                 >
-                    <h2 className="my-2 w-full text-left text-4xl font-bold dark:text-light sm:text-lg ">
+                    <h2 className="my-2 w-full text-left text-4xl font-bold dark:text-light sm:text-lg xs:my-0 ">
                         {title}
                     </h2>
                 </Link>
-                <p className="my-2 font-medium text-dark dark:text-light sm:text-xs">
+                <p className="my-2 font-medium text-dark dark:text-light sm:text-xs xs:text-[8px]">
                     {summary}
                 </p>
                 <div className="mt-2 flex items-center">
@@ -133,42 +135,14 @@ const projects = () => {
                         className="mb-16 lg:!text-7xl sm:!text-6xl xs:!text-4xl sm:mb-8"
                     />
                     <div className="grid grid-cols-12 gap-24 gap-y-36 xl:gap-x-16 lg:gap-x-8 md:gap-y-24 sm:gap-x-0">
-                    <div className="col-span-12">
-                            <FeaturedProject
-                                type="Featured Project"
-                                title="CV dara Resume Builder App"
-                                summary="CV Dara is a web-based application that simplifies creating and customizing professional resumes. Built with HTML, JavaScript, and CSS, it features a user-friendly form where users can input personal information, education, experience, and skills. This data is dynamically rendered into a styled resume template for a polished final result. With data persistence, users can easily revisit and update their resumes. CV Dara highlights practical front-end development skills, focusing on responsive design, dynamic data handling, and enhancing user experience, making it an efficient tool for anyone needing a quick, customizable resume solution."
-                                link="https://resume-builder-milestone4-one.vercel.app/"
-                                gitHubLink="/"
-                                image={FeaturedProject3Image}
-                            />
-                        </div>
                         <div className="col-span-12">
                             <FeaturedProject
-                                type="Featured Project"
-                                title="Bubble Game"
-                                summary="Bubble Game is an interactive web-based game where players click on bubbles that match a target number. The game includes a start menu and a timer to track time and score. Players enjoy engaging sound effects for events like a timer end or successful bubble click. With a responsive design, it adapts seamlessly to various devices. The game features a visually appealing color theme with light blue and aqua bubbles, dark navy UI, and bright yellow highlights for the score and timer, offering a fun and dynamic user experience."
-                                link="https://bubble-game-abdul-rafays-projects-87eac4f7.vercel.app/"
+                                type="Web Game"
+                                title="Snake Game"
+                                summary="The Snake Game is a dynamic and engaging project built using Next.js, JavaScript, and styled with Tailwind CSS, showcasing my skills in frontend development and responsive design. The game features smooth controls, a vibrant grass-themed UI with a cheerful yellow emoji snake 🟡, and exciting food mechanics, including randomly spawning items like apples 🍎 and cookies 🍪. Fully responsive, it offers a seamless experience across all devices, from desktops to mobiles. Through this project, I honed my problem-solving skills, improved my understanding of responsive layouts, and deepened my expertise in creating user-friendly interfaces. Special thanks to AI tools for guiding me throughout this rewarding journey. "
+                                link="https://snake-game-abdul-rafays-projects-87eac4f7.vercel.app/"
                                 gitHubLink="/"
-                                image={FeaturedProject2Image}
-                            />
-                        </div>
-                        <div className="col-span-6 sm:col-span-12">
-                            <Project
-                                type="Project"
-                                title="Todo List App"
-                                link="https://todo-app-abdul-rafays-projects-87eac4f7.vercel.app/"
-                                gitHubLink="/"
-                                image={Project1Image}
-                            />
-                        </div>
-                        <div className="col-span-6 sm:col-span-12">
-                            <Project
-                                type="Project"
-                                title="Weather App"
-                                link="https://weather-app-abdul-rafays-projects-87eac4f7.vercel.app/"
-                                gitHubLink="/"
-                                image={Project2Image}
+                                image={FeaturedProject5Image}
                             />
                         </div>
                         <div className="col-span-12">
@@ -181,7 +155,6 @@ const projects = () => {
                                 image={FeaturedProject1Image}
                             />
                         </div>
-                        
                         <div className="col-span-6 sm:col-span-12">
                             <Project
                                 type="Project"
@@ -202,6 +175,46 @@ const projects = () => {
                         </div>
                         <div className="col-span-12">
                             <FeaturedProject
+                                type="Featured Project"
+                                title="CV dara Resume Builder App"
+                                summary="CV Dara is a web-based application that simplifies creating and customizing professional resumes. Built with HTML, JavaScript, and CSS, it features a user-friendly form where users can input personal information, education, experience, and skills. This data is dynamically rendered into a styled resume template for a polished final result. With data persistence, users can easily revisit and update their resumes. CV Dara highlights practical front-end development skills, focusing on responsive design, dynamic data handling, and enhancing user experience, making it an efficient tool for anyone needing a quick, customizable resume solution."
+                                link="https://resume-builder-milestone4-one.vercel.app/"
+                                gitHubLink="/"
+                                image={FeaturedProject3Image}
+                            />
+                        </div>
+                        <div className="col-span-12">
+                            <FeaturedProject
+                                type="Featured Project"
+                                title="Bubble Game"
+                                summary="Bubble Game is an interactive web-based game where players click on bubbles that match a target number. The game includes a start menu and a timer to track time and score. Players enjoy engaging sound effects for events like a timer end or successful bubble click. With a responsive design, it adapts seamlessly to various devices. The game features a visually appealing color theme with light blue and aqua bubbles, dark navy UI, and bright yellow highlights for the score and timer, offering a fun and dynamic user experience."
+                                link="https://bubble-game-abdul-rafays-projects-87eac4f7.vercel.app/"
+                                gitHubLink="/"
+                                image={FeaturedProject2Image}
+                            />
+                        </div>
+
+                        <div className="col-span-6 sm:col-span-12">
+                            <Project
+                                type="Project"
+                                title="Todo List App"
+                                link="https://todo-app-abdul-rafays-projects-87eac4f7.vercel.app/"
+                                gitHubLink="/"
+                                image={Project1Image}
+                            />
+                        </div>
+                        <div className="col-span-6 sm:col-span-12">
+                            <Project
+                                type="Project"
+                                title="Weather App"
+                                link="https://weather-app-abdul-rafays-projects-87eac4f7.vercel.app/"
+                                gitHubLink="/"
+                                image={Project2Image}
+                            />
+                        </div>
+
+                        <div className="col-span-12">
+                            <FeaturedProject
                                 type="Porfolio"
                                 title="My another Portfolio"
                                 summary="This portfolio is clone of my origonal porfolio but with custom css and made in only 2 hours on next js"
@@ -210,7 +223,7 @@ const projects = () => {
                                 image={FeaturedProject4Image}
                             />
                         </div>
-    
+
                         {/* <div className="col-span-12">
                             <FeaturedProject
                                 type="Featured Project"
@@ -221,7 +234,7 @@ const projects = () => {
                                 image={FeaturedProject3Image}
                             />
                         </div> */}
-                       
+
                     </div>
                 </Layout>
             </main>
