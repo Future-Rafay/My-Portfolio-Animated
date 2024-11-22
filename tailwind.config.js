@@ -47,21 +47,21 @@ module.exports = {
       },
       backgroundImage: {
         circularLight:
-          "repeating-radial-gradient(#212529 2px ,#E9ECEF 8px , #E9ECEF 140px);",
+          "repeating-radial-gradient(#2E4057 2px ,#FFF3E0 8px , #FFF3E0 140px);",
         circularDark:
-          "repeating-radial-gradient( #E9ECEF 2px ,#212529 8px , #212529 140px);",
+          "repeating-radial-gradient( #FFF3E0 2px ,#212529 8px , #2E4057 140px);",
         circularLightLg:
-          "repeating-radial-gradient(#212529 2px ,#E9ECEF 8px , #E9ECEF 80px);",
+          "repeating-radial-gradient(#2E4057 2px ,#FFF3E0 8px , #FFF3E0 80px);",
         circularDarkLg:
-          "repeating-radial-gradient( #E9ECEF 2px ,#212529 8px , #212529 80px);",
+          "repeating-radial-gradient( #FFF3E0 2px ,#2E4057 8px , #2E4057 80px);",
         circularLightMd:
-          "repeating-radial-gradient(#212529 1px,#E9ECEF 5px,#E9ECEF 60px)",
+          "repeating-radial-gradient(#2E4057 1px,#FFF3E0 5px,#FFF3E0 60px)",
         circularDarkMd:
-          "repeating-radial-gradient(rgba(255,255,255,0.5) 1px,#212529 5px,#212529 60px)",
+          "repeating-radial-gradient(rgba(255,255,255,0.5) 1px,#2E4057 5px,#2E4057 60px)",
         circularLightSm:
-          "repeating-radial-gradient(#212529 ,#E9ECEF 3px , #E9ECEF 40px);",
+          "repeating-radial-gradient(#2E4057 ,#FFF3E0 3px , #FFF3E0 40px);",
         circularDarkSm:
-          "repeating-radial-gradient( #E9ECEF,#212529 3px , #212529 40px);",
+          "repeating-radial-gradient( #FFF3E0,#2E4057 3px , #2E4057 40px);",
       },
     },
     screens: {
