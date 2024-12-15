@@ -1,6 +1,5 @@
 /** @type {import('tailwindcss').Config} */
 
-const { color } = require('framer-motion');
 const { fontFamily } = require("tailwindcss/defaultTheme");
 
 module.exports = {
@@ -11,57 +10,33 @@ module.exports = {
       fontFamily: {
         mont: ["var(--font-mont)", ...fontFamily.sans],
       },
-      // colors: {
-      //   dark: "#1b1b1b",
-      //   light: "#f5f5f5",
-      //   primary: "#B63E96", // 240,86,199
-      //   primaryDark: "#58E6D9", // 80,230,217
-      // },
-      // colors: {
-      //   dark: "#2C2C2C",  // (near-black for text/background contrast)
-      //   light: "#FAFAFA", // (a slightly cooler off-white for a clean look)
-      //   primary: "#FF6B6B",  // (a bold, warm red-pink hue)
-      //   primaryDark: "#4ECDC4", //  (a soft, cool aqua tone for contrast)
-      // },
-      // colors: {
-      //   dark: "#212529", // (a deep charcoal gray, for a refined dark tone without being pure black)
-      //   light: "#E9ECEF", //(a warm, soft off-white that’s easy on the eyes)
-      //   primary: "#FF5C8D", //(a vibrant coral pink, eye-catching but not overpowering)
-      //   primaryDark: "#4DB6AC", // (a cool, muted teal for a refreshing contrast with the coral)
-      // },
       colors: {
-        dark: "#2E4057", //(Dusty Navy, for depth)
-        light: "#FFF3E0", // (Soft Cream, a warm off-white)
-        primary: "#F48FB1", // (Pastel Pink, soft yet attention-grabbing)
-        primaryDark: "#81D4FA", // (Light Sky Blue for a refreshing contrast)
+        dark: "#4A4A4A", // Charcoal Gray
+        light: "#F0F0F0", // Soft White Gray
+        primary: "#FFC857", // Bright Yellow
+        primaryDark: "#FF6F61", // Coral for warmth
       },
-      // colors:{
-      //   dark: "#37474F",// (Deep Slate Blue)
-      //   light: "#ECEFF1",// (Light Slate Gray)
-      //   primary: "#FF8A65",// (Warm Coral/Salmon for a friendly touch)
-      //   primaryDark: "#FFD54F",// (Soft Golden Yellow for a vibrant accent)
-      // },
 
       animation: {
         "spin-slow": "spin 6s linear infinite",
       },
       backgroundImage: {
         circularLight:
-          "repeating-radial-gradient(#2E4057 2px ,#FFF3E0 8px , #FFF3E0 140px);",
+          "repeating-radial-gradient(#4A4A4A 2px ,#F0F0F0 8px , #F0F0F0 140px);",
         circularDark:
-          "repeating-radial-gradient( #FFF3E0 2px ,#212529 8px , #2E4057 140px);",
+          "repeating-radial-gradient( #F0F0F0 2px ,#4A4A4A 8px , #4A4A4A 140px);",
         circularLightLg:
-          "repeating-radial-gradient(#2E4057 2px ,#FFF3E0 8px , #FFF3E0 80px);",
+          "repeating-radial-gradient(#4A4A4A 2px ,#F0F0F0 8px , #F0F0F0 80px);",
         circularDarkLg:
-          "repeating-radial-gradient( #FFF3E0 2px ,#2E4057 8px , #2E4057 80px);",
+          "repeating-radial-gradient( #F0F0F0 2px ,#4A4A4A 8px , #4A4A4A 80px);",
         circularLightMd:
-          "repeating-radial-gradient(#2E4057 1px,#FFF3E0 5px,#FFF3E0 60px)",
+          "repeating-radial-gradient(#4A4A4A 1px,#F0F0F0 5px,#F0F0F0 60px)",
         circularDarkMd:
-          "repeating-radial-gradient(rgba(255,255,255,0.5) 1px,#2E4057 5px,#2E4057 60px)",
+          "repeating-radial-gradient(#F0F0F0 1px,#4A4A4A 5px,#4A4A4A 60px)",
         circularLightSm:
-          "repeating-radial-gradient(#2E4057 ,#FFF3E0 3px , #FFF3E0 40px);",
+          "repeating-radial-gradient(#4A4A4A ,#F0F0F0 3px , #F0F0F0 40px);",
         circularDarkSm:
-          "repeating-radial-gradient( #FFF3E0,#2E4057 3px , #2E4057 40px);",
+          "repeating-radial-gradient( #F0F0F0 ,#4A4A4A 3px , #4A4A4A 40px);",
       },
     },
     screens: {

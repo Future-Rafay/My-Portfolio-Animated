@@ -45,9 +45,9 @@ const FeaturedProject = ({ title, link, type, summary, image, gitHubLink }) => {
                 <Link
                     href={link}
                     target="_blank"
-                    className="hover:underline underline-offset-3"
+                    className="hover:underline underline-offset-3 text-dark dark:text-light"
                 >
-                    <h2 className="my-2 w-full text-left text-4xl font-bold dark:text-light sm:text-lg xs:my-0 ">
+                    <h2 className="my-2 w-full text-left text-4xl font-bold sm:text-lg xs:my-0 text-dark dark:text-light">
                         {title}
                     </h2>
                 </Link>

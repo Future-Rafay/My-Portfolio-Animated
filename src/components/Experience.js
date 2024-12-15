@@ -15,7 +15,7 @@ const Details = ({ position, company, companyLink, time, address, work }) => {
                 whileInView={{ y: 0 }}
                 transition={{ duration: 0.5, type: "spring" }}
             >
-                <h3 className="capatalize font-bold text-2xl sm:text-xl xs:text-lg">
+                <h3 className="capatalize font-bold text-2xl sm:text-xl xs:text-lg text-dark dark:text-light">
                     {position}&nbsp;,
                     <a
                         href={companyLink}
@@ -42,7 +42,7 @@ const Experience = () => {
     });
     return (
         <div className="my-64">
-            <h2 className="font-bold  w-full text-center text-8xl md:text-6xl sm:text-5xl xs:text-4xl">
+            <h2 className="font-bold  w-full text-center text-8xl md:text-6xl sm:text-5xl xs:text-4xl text-dark dark:text-light">
                 Experience
             </h2>
                 <h1 className="text-center my-16 font-semibold md:py-12 sm:py-8 ">Mock data</h1>

@@ -25,8 +25,8 @@ const about = () => {
                         className="mb-16 lg:!text-7xl sm:!text-6xl xs:!text-4xl sm:mb-8"
                     />
                     <div className="grid w-full grid-cols-8 gap-16 sm:gap-8">
-                        <div className="col-span-3 flex flex-col items-start justify-start xl:col-span-4 md:order-2 md:col-span-8">
-                            <h2 className="mb-4 text-xl font-bold uppercase text-dark/75 dark:text-light">
+                        <div className="col-span-3 flex flex-col items-start justify-start xl:col-span-4 md:order-2 xs:text-xs sm:text-sm md:text-base md:col-span-8">
+                            <h2 className="mb-4 font-bold text-xl uppercase text-dark/75 dark:text-light">
                                 Meet Abdul Rafay
                             </h2>
                             <p className="font-medium mb-4">
@@ -70,7 +70,7 @@ const about = () => {
                         "
                         >
                             <div className="flex flex-col items-end justify-center xl:items-center">
-                                <span className="text-7xl font-bold inline-block md:text-6xl sm:text-5xl xs:text-4xl">
+                                <span className="text-7xl font-bold inline-block md:text-6xl sm:text-5xl xs:text-4xl text-dark dark:text-light">
                                     11+
                                 </span>
                                 <h2 className="text-dark/75 text-xl font-medium capitalize dark:text-light/75 xl:text-center md:text-lg sm:text-base xs:text-sm">
@@ -78,7 +78,7 @@ const about = () => {
                                 </h2>
                             </div>
                             <div className="flex flex-col items-end justify-center xl:items-center">
-                                <span className="text-7xl font-bold inline-block md:text-6xl sm:text-5xl xs:text-4xl">
+                                <span className="text-7xl font-bold inline-block md:text-6xl sm:text-5xl xs:text-4xl text-dark dark:text-light">
                                     8+
                                 </span>
                                 <h2 className="text-dark/75 text-xl font-medium capitalize dark:text-light/75 xl:text-center md:text-lg sm:text-base xs:text-sm">
@@ -86,7 +86,7 @@ const about = () => {
                                 </h2>
                             </div>
                             <div className="flex flex-col items-end justify-center xl:items-center">
-                                <span className="text-7xl font-bold inline-block md:text-6xl sm:text-5xl xs:text-4xl">
+                                <span className="text-7xl font-bold inline-block md:text-6xl sm:text-5xl xs:text-4xl text-dark dark:text-light">
                                     7+
                                 </span>
                                 <h2 className="text-dark/75 text-xl font-medium capitalize dark:text-light/75 xl:text-center md:text-lg sm:text-base xs:text-sm">

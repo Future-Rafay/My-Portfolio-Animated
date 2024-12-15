@@ -15,11 +15,11 @@ import useThemeSwitcher from "./hooks/useThemeSwitcher";
 const CustomLink = ({ href, title, className = "" }) => {
     const router = useRouter();
     return (
-        <Link href={href} className={`${className} relative group`}>
+        <Link href={href} className={`${className} relative group text-dark dark:text-light`}>
             {title}
 
             <span
-                className={`h-[2px] inline-block bg-dark absolute left-0 -bottom-0.5 group-hover:w-full transition-[width] ease-linear duration-300 dark:bg-light ${router.asPath === href ? "w-full" : "w-0"
+                className={`h-[2px] inline-block bg-dark dark:bg-light absolute left-0 -bottom-0.5 group-hover:w-full transition-[width] ease-linear duration-300  ${router.asPath === href ? "w-full" : "w-0"
                     }`}
             >
                 &nbsp;
@@ -102,7 +102,7 @@ const Navbar = () => {
                     <motion.a
                         href="https://github.com/Future-Rafay"
                         target={"_blank"}
-                        className="w-7 mx-3"
+                        className="w-7 mx-3 text-black dark:text-white"
                         whileHover={{ y: -2 }}
                         whileTap={{ scale: 0.9 }}
                     >
@@ -207,9 +207,9 @@ const Navbar = () => {
                 </motion.div>
             ) : null}
 
-            <div className="absolute left-[50%] top-2 -translate-x-[50%] ">
+            {/* <div className="absolute left-[50%] top-2 -translate-x-[50%] ">
                 <Logo />
-            </div>
+            </div> */}
         </header>
     );
 };
