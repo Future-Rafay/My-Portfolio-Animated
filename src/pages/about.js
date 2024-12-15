@@ -8,8 +8,6 @@ import Skills from "@/components/Skills";
 import Experience from "@/components/Experience";
 import Education from "@/components/Education";
 
-const AnimatedNumbers = () => { };
-
 const about = () => {
     return (
         <>

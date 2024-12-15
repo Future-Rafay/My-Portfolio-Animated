@@ -7,6 +7,9 @@ import Link from "next/link";
 import { LinkArrow } from "@/components/Icons";
 import HireMe from "@/components/HireMe";
 import lightbulb from "../../public/images/svgs/miscellaneous_icons_1.svg";
+import About from "./about";
+import ProjectPage from "./projects";
+import ArticalPage from "./articles";
 
 export default function Home() {
   return (
@@ -75,6 +78,9 @@ export default function Home() {
           />
         </div>
       </main>
+      <About />
+      <ProjectPage />
+      <ArticalPage />
     </>
   );
 }
