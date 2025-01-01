@@ -11,7 +11,6 @@ import About from "./about";
 import ProjectPage from "./projects";
 import ArticalPage from "./articles";
 import { motion } from 'framer-motion';
-import FlippingImage from "@/components/Flippingimage";
 
 export default function Home() {
   return (
