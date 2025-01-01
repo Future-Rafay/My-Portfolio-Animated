@@ -1,7 +1,7 @@
 import Layout from "@/components/Layout";
 import Head from "next/head";
 import Image from "next/image";
-import profilepic from "../../public/images/profile/Future-Rafay.png";
+import profilepic from "../../public/images/profile/rafay.jpg";
 import AnimatedText from "@/components/AnimatedText";
 import Link from "next/link";
 import { LinkArrow } from "@/components/Icons";
@@ -10,6 +10,8 @@ import lightbulb from "../../public/images/svgs/miscellaneous_icons_1.svg";
 import About from "./about";
 import ProjectPage from "./projects";
 import ArticalPage from "./articles";
+import { motion } from 'framer-motion';
+import FlippingImage from "@/components/Flippingimage";
 
 export default function Home() {
   return (
@@ -56,16 +58,42 @@ export default function Home() {
                 </Link>
               </div>
             </div>
-            <div className="w-1/2 md:w-full">
-              <Image
-                priority
-                sizes="(max-width: 768px) 100vw , (max-width: 1200px) 50vw , 50vw"
-                src={profilepic}
-                alt="Future-Rafay"
-                className="w-full h-auto lg:hidden md:inline-block md:w-full md:mb-14 md:md:order-1"
-                width="w-full"
-                height="h-full"
-              />
+            <div className="w-1/2 md:w-full flex items-center justify-center">
+              <motion.div
+                className="w-[80%] h-auto lg:hidden md:inline-block md:w-full md:mb-14 md:md:order-1 rounded-full shadow-2xl"
+                whileHover={{
+                  filter: "grayscale(0%)",  // Remove grayscale on hover
+                  y: -10,  // Move up on hover
+                  rotateX: -5,  // Tilt effect along the X-axis
+                  rotateY: 10,  // Tilt effect along the Y-axis
+                  transition: {
+                    duration: 0.5,
+                    ease: "easeInOut",
+                    type: "spring",  // Apply spring effect for bounciness
+                    stiffness: 400,  // High stiffness for a snappy effect
+                    damping: 10,  // Low damping for bounciness
+                  },
+                }}
+                initial={{ filter: "grayscale(100%)" }} // Start with grayscale
+                whileTap={{
+                  scale: 0.98,  // Slight scale down on tap
+                  transition: {
+                    type: "spring",
+                    stiffness: 300,
+                    damping: 15,
+                  },
+                }}
+              >
+                <Image
+                  priority
+                  sizes="(max-width: 768px) 100vw , (max-width: 1200px) 50vw , 50vw"
+                  src={profilepic}
+                  alt="Future-Rafay"
+                  className="rounded-full"
+                  width="w-full"
+                  height="h-full"
+                />
+              </motion.div>
             </div>
           </div>
         </Layout>

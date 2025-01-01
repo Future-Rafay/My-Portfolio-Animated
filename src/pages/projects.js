@@ -1,17 +1,18 @@
 import AnimatedText from "@/components/AnimatedText";
-import { GithubIcon } from "@/components/Icons";
+// import { GithubIcon } from "@/components/Icons";
 import Layout from "@/components/Layout";
 import { motion } from "framer-motion";
 import Head from "next/head";
 import Link from "next/link";
 import Image from "next/image";
-import FeaturedProject1Image from "../../public/images/projects/e-commerce-web1.png";
 import Project1Image from "../../public/images/projects/todo-app.png";
 import Project2Image from "../../public/images/projects/weather-app.png";
-import FeaturedProject2Image from "../../public/images/projects/bubble-game-2.png";
 import Project3Image from "../../public/images/projects/amazon.png";
 import Project4Image from "../../public/images/projects/toyota-web.png";
-import FeaturedProject3Image from "../../public/images/projects/resumebuilder.miltestone4.png";
+import Project5Image from "../../public/images/projects/resumebuilder.miltestone4.png";
+import Project6Image from "../../public/images/projects/blog-web.png";
+import FeaturedProject1Image from "../../public/images/projects/e-commerce-web1.png";
+import FeaturedProject2Image from "../../public/images/projects/bubble-game-2.png";
 import FeaturedProject4Image from "../../public/images/projects/portfolio-customCSS.png";
 import FeaturedProject5Image from "../../public/images/projects/snakeGame.png";
 
@@ -145,6 +146,25 @@ const projects = () => {
                                 image={FeaturedProject5Image}
                             />
                         </div>
+                        <div className="col-span-6 sm:col-span-12">
+                            <Project
+                                type="Project"
+                                title="Blog website"
+                                link="https://weather-app-abdul-rafays-projects-87eac4f7.vercel.app/"
+                                gitHubLink="/"
+                                image={Project6Image}
+                            />
+                        </div>
+                        <div className="col-span-6 sm:col-span-12">
+                            <Project
+                                type="Tool Project"
+                                title="CV dara Resume Builder App"
+                                summary="CV Dara is a web-based application that simplifies creating and customizing professional resumes. Built with HTML, JavaScript, and CSS, it features a user-friendly form where users can input personal information, education, experience, and skills. This data is dynamically rendered into a styled resume template for a polished final result. With data persistence, users can easily revisit and update their resumes. CV Dara highlights practical front-end development skills, focusing on responsive design, dynamic data handling, and enhancing user experience, making it an efficient tool for anyone needing a quick, customizable resume solution."
+                                link="https://resume-builder-milestone4-one.vercel.app/"
+                                gitHubLink="/"
+                                image={Project5Image}
+                            />
+                        </div>
                         <div className="col-span-12">
                             <FeaturedProject
                                 type="Featured Project"
@@ -173,16 +193,7 @@ const projects = () => {
                                 image={Project4Image}
                             />
                         </div>
-                        <div className="col-span-12">
-                            <FeaturedProject
-                                type="Featured Project"
-                                title="CV dara Resume Builder App"
-                                summary="CV Dara is a web-based application that simplifies creating and customizing professional resumes. Built with HTML, JavaScript, and CSS, it features a user-friendly form where users can input personal information, education, experience, and skills. This data is dynamically rendered into a styled resume template for a polished final result. With data persistence, users can easily revisit and update their resumes. CV Dara highlights practical front-end development skills, focusing on responsive design, dynamic data handling, and enhancing user experience, making it an efficient tool for anyone needing a quick, customizable resume solution."
-                                link="https://resume-builder-milestone4-one.vercel.app/"
-                                gitHubLink="/"
-                                image={FeaturedProject3Image}
-                            />
-                        </div>
+                       
                         <div className="col-span-12">
                             <FeaturedProject
                                 type="Featured Project"
