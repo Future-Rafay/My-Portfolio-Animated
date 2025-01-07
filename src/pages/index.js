@@ -16,7 +16,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Future-Rafay | Home Page</title>
+        <title>Future-Rafay Portfolio </title>
         <meta
           name="description"
           content="I’m a web developer focused on creativity and functionality. Explore my portfolio, from my recent projects to insights on my development process."

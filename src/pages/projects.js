@@ -124,13 +124,13 @@ const Project = ({ title, type, image, link, gitHubLink }) => {
 const projects = () => {
     return (
         <>
-            <Head>
+            {/* <Head>
                 <title>Future Rafay | Projects</title>
                 <meta
                     name="description"
                     content="A showcase of my work, featuring innovative web development projects crafted with modern frameworks. Discover how I blend design and technology to create engaging solutions."
                 />
-            </Head>
+            </Head> */}
             <main className="w-full mb-16 flex flex-col items-center justify-center dark:text-light">
                 <Layout className="pt-16">
                     <AnimatedText

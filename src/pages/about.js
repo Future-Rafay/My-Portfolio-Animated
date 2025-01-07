@@ -11,13 +11,13 @@ import Education from "@/components/Education";
 const about = () => {
     return (
         <>
-            <Head>
+            {/* <Head>
                 <title>Future Rafay | About Page</title>
                 <meta
                     name="description"
                     content="Explore my professional background, key skills, and personal journey in web development. Learn what drives me to create user-focused, engaging experiences."
                 />
-            </Head>
+            </Head> */}
             <main className="flex flex-col w-full items-center justify-center dark:text-light ">
                 <Layout className="pt-16">
                     <AnimatedText

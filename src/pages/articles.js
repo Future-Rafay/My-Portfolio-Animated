@@ -95,13 +95,13 @@ const Articles = ({ img, title, link, time }) => {
 const articles = () => {
     return (
         <>
-            <Head>
+            {/* <Head>
                 <title>Future Rafay | Articles Page</title>
                 <meta
                     name="description"
                     content="A collection of articles on coding, programming frameworks, and tech best practices. Stay informed with expert tips and development trends."
                 />
-            </Head>
+            </Head> */}
             <main className="w-full mb-16 flex flex-col items-center justify-center overflow-hidden dark:text-light">
                 <Layout className="pt-16">
                     <AnimatedText text="In-Depth Insights" className="mb-16 lg:!text-7xl sm:!text-6xl xs:!text-4xl sm:mb-8" />
