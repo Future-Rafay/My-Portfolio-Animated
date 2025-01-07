@@ -15,6 +15,8 @@ import FeaturedProject1Image from "../../public/images/projects/e-commerce-web1.
 import FeaturedProject2Image from "../../public/images/projects/bubble-game-2.png";
 import FeaturedProject4Image from "../../public/images/projects/portfolio-customCSS.png";
 import FeaturedProject5Image from "../../public/images/projects/snakeGame.png";
+import FeaturedProject6Image from "../../public/images/projects/vivedCart.png";
+
 
 
 
@@ -62,7 +64,7 @@ const FeaturedProject = ({ title, link, type, summary, image, gitHubLink }) => {
                     <Link
                         href={link}
                         target="_blank"
-                        className="bg-dark text-light dark:bg-light dark:text-dark p-2 px-6 rounded-lg font-semibold text-lg ml-4 sm:px-3 sm:text-sm"
+                        className="bg-dark text-light dark:bg-light dark:text-dark p-2 px-6 rounded-lg font-semibold text-lg  sm:px-3 sm:text-sm"
                     >
                         Visit Project
                     </Link>
@@ -138,6 +140,16 @@ const projects = () => {
                     <div className="grid grid-cols-12 gap-24 gap-y-36 xl:gap-x-16 lg:gap-x-8 md:gap-y-24 sm:gap-x-0">
                         <div className="col-span-12">
                             <FeaturedProject
+                                type="E commerce Website"
+                                title="Vivid Cart website"
+                                summary="VividCart is a dynamic e-commerce platform designed to redefine online shopping. Built with cutting-edge technologies like Next.js, TypeScript, Tailwind CSS, and shadcn/ui, it delivers a seamless and visually captivating user experience."
+                                link="https://vivid-cart-e-commerce.vercel.app/"
+                                gitHubLink="https://github.com/Future-Rafay/nextjs-milestone-3-basic-ecommerce-site"
+                                image={FeaturedProject6Image}
+                            />
+                        </div>
+                        <div className="col-span-12">
+                            <FeaturedProject
                                 type="Web Game"
                                 title="Snake Game"
                                 summary="The Snake Game is a dynamic and engaging project built using Next.js, JavaScript, and styled with Tailwind CSS, showcasing my skills in frontend development and responsive design. The game features smooth controls, a vibrant grass-themed UI with a cheerful yellow emoji snake 🟡, and exciting food mechanics, including randomly spawning items like apples 🍎 and cookies 🍪. Fully responsive, it offers a seamless experience across all devices, from desktops to mobiles. Through this project, I honed my problem-solving skills, improved my understanding of responsive layouts, and deepened my expertise in creating user-friendly interfaces. Special thanks to AI tools for guiding me throughout this rewarding journey. "
@@ -146,16 +158,17 @@ const projects = () => {
                                 image={FeaturedProject5Image}
                             />
                         </div>
-                        <div className="col-span-6 sm:col-span-12">
-                            <Project
+                        <div className="col-span-12">
+                            <FeaturedProject
                                 type="Project"
                                 title="Blog website"
-                                link="https://weather-app-abdul-rafays-projects-87eac4f7.vercel.app/"
+                                summary="FR blogs is a modern content platform built with Sanity.io, Next.js, TypeScript, and Tailwind CSS, offering a seamless and engaging reading experience. Featuring dynamic content management, responsive design, dark mode integration, and SEO optimization, this blog combines functionality with aesthetics to deliver insightful content in a visually appealing interface. It’s a testament to my ability to create scalable, user-centric web applications with cutting-edge technologies."
+                                link="https://blog-web-nextjs-sanity-shadcn.vercel.app/"
                                 gitHubLink="/"
                                 image={Project6Image}
                             />
                         </div>
-                        <div className="col-span-6 sm:col-span-12">
+                        {/* <div className="col-span-6 sm:col-span-12">
                             <Project
                                 type="Tool Project"
                                 title="CV dara Resume Builder App"
@@ -164,7 +177,7 @@ const projects = () => {
                                 gitHubLink="/"
                                 image={Project5Image}
                             />
-                        </div>
+                        </div> */}
                         <div className="col-span-12">
                             <FeaturedProject
                                 type="Featured Project"
@@ -193,7 +206,7 @@ const projects = () => {
                                 image={Project4Image}
                             />
                         </div>
-                       
+
                         <div className="col-span-12">
                             <FeaturedProject
                                 type="Featured Project"
