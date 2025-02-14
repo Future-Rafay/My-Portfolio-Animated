@@ -16,6 +16,7 @@ import FeaturedProject2Image from "../../public/images/projects/bubble-game-2.pn
 import FeaturedProject4Image from "../../public/images/projects/portfolio-customCSS.png";
 import FeaturedProject5Image from "../../public/images/projects/snakeGame.png";
 import FeaturedProject6Image from "../../public/images/projects/vivedCart.png";
+import FeaturedProject7Image from "../../public/images/projects/springz.png";
 
 
 
@@ -138,6 +139,17 @@ const projects = () => {
                         className="mb-16 lg:!text-7xl sm:!text-6xl xs:!text-4xl sm:mb-8"
                     />
                     <div className="grid grid-cols-12 gap-24 gap-y-36 xl:gap-x-16 lg:gap-x-8 md:gap-y-24 sm:gap-x-0">
+                        <div className="col-span-12">
+                            <FeaturedProject
+                                type="E-commerce Website"
+                                title="Springz"
+                                summary="Springz is a vibrant and fully functional e-commerce platform with seperate admin dashboard for all your shopping needs. Built with Next.js 14, TypeScript, Tailwind CSS, and Sanity, it offers a seamless shopping experience with dynamic product management and a visually appealing user interface."
+                                link="https://springz.ch/"
+                                gitHubLink="https://github.com/Future-Rafay/Springz"
+                                image={FeaturedProject7Image}
+                            />
+
+                        </div>
                         <div className="col-span-12">
                             <FeaturedProject
                                 type="E commerce Website"
