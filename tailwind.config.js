@@ -13,8 +13,8 @@ module.exports = {
       colors: {
         dark: "#4A4A4A", // Charcoal Gray
         light: "#F0F0F0", // Soft White Gray
-        primary: "#FFC857", // Bright Yellow
-        primaryDark: "#FF6F61", // Coral for warmth
+        primary: "#FF6F61", // Bright Yellow
+        primaryDark: "#FFC857", // Coral for warmth
       },
 
       animation: {
