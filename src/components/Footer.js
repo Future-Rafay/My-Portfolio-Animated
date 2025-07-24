@@ -17,7 +17,7 @@ const Footer = () => {
           </span>
           by&nbsp;
           <Link
-            href="https://www.linkedin.com/in/rafay-nadeem-14a2632bb/"
+            href="https://www.linkedin.com/in/rafay-nadeem-web-developer/"
             target="_blank"
             className="underline underline-offset-4"
           >
@@ -25,7 +25,7 @@ const Footer = () => {
           </Link>
         </div>
         <Link href="/contact" target="_blank" className="underline underline-offset-4">
-          Say Hello
+          Say Hello 😊
         </Link>
       </Layout>
     </footer>

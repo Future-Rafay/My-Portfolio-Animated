@@ -9,7 +9,6 @@ import HireMe from "@/components/HireMe";
 import lightbulb from "../../public/images/svgs/miscellaneous_icons_1.svg";
 import About from "./about";
 import ProjectPage from "./projects";
-import ArticalPage from "./articles";
 import { motion } from 'framer-motion';
 
 export default function Home() {
@@ -97,17 +96,16 @@ export default function Home() {
           </div>
         </Layout>
         <HireMe />
-        <div className="absolute inline-block w-28 left-8 bottom-8 md:hidden lg:!absolute xl:w-16">
+        {/* <div className="absolute inline-block w-28 left-8 bottom-8 md:hidden lg:!absolute xl:w-16">
           <Image
             src={lightbulb}
             alt="Light Bulb Image"
             className="w-full h-auto"
           />
-        </div>
+        </div> */}
       </main>
       <About />
       <ProjectPage />
-      <ArticalPage />
     </>
   );
 }
